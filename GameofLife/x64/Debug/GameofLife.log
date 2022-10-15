@@ -1,0 +1,3 @@
+﻿  GameofLife.c
+C:\Users\Caio\Downloads\GameofLife-master\GameofLife-master\GameofLife\functions.h(39,3): warning C4013: 'main' indefinido; assumindo extern retornando int
+  GameofLife.vcxproj -> C:\Users\Caio\Downloads\GameofLife-master\GameofLife-master\x64\Debug\GameofLife.exe
