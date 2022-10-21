@@ -1,14 +1,14 @@
 ﻿  main.c
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(21,17): warning C4098: 'tamanhoMapa': função 'void' retornando um valor
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(77,2): warning C4013: 'Sleep' indefinido; assumindo extern retornando int
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(23,17): warning C4098: 'tamanhoMapa': função 'void' retornando um valor
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(78,2): warning C4013: 'Sleep' indefinido; assumindo extern retornando int
 D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(168,19): warning C4013: 'vizinhoPosicaoAtual' indefinido; assumindo extern retornando int
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(247,43): warning C4474: 'printf': excesso de argumentos transmitidos para cadeia de caracteres de formato
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(247,43): message : espaços reservados e seus parâmetros esperam 0 argumentos variadic, mas 1 foram fornecidos
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(259,47): warning C4013: 'qtdSeresVivos' indefinido; assumindo extern retornando int
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(335,11): warning C4013: 'strtok' indefinido; assumindo extern retornando int
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(335,33): warning C4047: '=': 'char *' difere em níveis de indireção de 'int'
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(337,28): warning C4047: '=': 'char *' difere em níveis de indireção de 'int'
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(339,28): warning C4047: '=': 'char *' difere em níveis de indireção de 'int'
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(364,3): warning C4013: 'getch' indefinido; assumindo extern retornando int
-D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\main.c(76,31): warning C4013: '_getch' indefinido; assumindo extern retornando int
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(248,46): warning C4474: 'printf': excesso de argumentos transmitidos para cadeia de caracteres de formato
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(248,46): message : espaços reservados e seus parâmetros esperam 0 argumentos variadic, mas 1 foram fornecidos
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(260,47): warning C4013: 'qtdSeresVivos' indefinido; assumindo extern retornando int
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(336,11): warning C4013: 'strtok' indefinido; assumindo extern retornando int
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(336,33): warning C4047: '=': 'char *' difere em níveis de indireção de 'int'
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(338,28): warning C4047: '=': 'char *' difere em níveis de indireção de 'int'
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(340,28): warning C4047: '=': 'char *' difere em níveis de indireção de 'int'
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\Functions.h(365,3): warning C4013: 'getch' indefinido; assumindo extern retornando int
+D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\JogoDaVidaCaio\main.c(82,31): warning C4013: '_getch' indefinido; assumindo extern retornando int
   JogoDaVidaCaio.vcxproj -> D:\Códigos_Programação\Códigos\Visual_Studio_2022\JogoDaVidaCaio\x64\Debug\JogoDaVidaCaio.exe

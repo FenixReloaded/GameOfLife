@@ -2,10 +2,12 @@ int maximoEixoX = 20;
 int maximoEixoY = 20;
 int numGeracaoAtual = 0;
 
+//faz com que toda a tela do console seja limpa a fim de melhorar o UI
 void limparTela () {
 	system("cls");
 }
 
+//permite que o jogador configure uma nova quantidade de linhas (eixo X) e colunas (eixo Y) 
 void tamanhoMapa() {
 
 	limparTela();
@@ -50,6 +52,7 @@ void configuracaoGeral(int matrizJogo[100][100]) {
 	}
 }
 
+//permite que o jogador selecione e coloque os seres vivos na posição onde desejar
 void insereSerVivo(int matrizJogo[100][100]) {
 	while (!0) {
 		int posicaoX = 0;
@@ -66,12 +69,10 @@ void insereSerVivo(int matrizJogo[100][100]) {
 		matrizJogo[posicaoY][posicaoX] = 1;
 
 		printf("A posicao %d %d foi marcada como um ser vivo!\n", posicaoX, posicaoY);
-
-		//inserir uma forma de ver o mapa com os locais dos seres que foram criados
 	}
 }
 
-
+//possibilita o jogador ver as informações sobre o tamanho do mundo
 void tamanhoAtual(){
 	printf("Carregando as informacoes salvas sobre o seu jogo. Por favor aguarde...\n");
 	Sleep(2000);
@@ -81,6 +82,7 @@ void tamanhoAtual(){
 	Sleep(2000);
 }
 
+//créditos aos criadores e ao professor
 void creditos() {
 	limparTela();
 	printf("Projeto Jogo da Vida para a Disciplina de Laboratorio de Programacao LP\n");
@@ -98,6 +100,7 @@ void creditos() {
 
 }
 
+//confirmação e validador de saída do jogo
 void saida() {
 	char opcao = ' ';
 
@@ -122,7 +125,6 @@ void saida() {
 void copiarMapa(int matrizJogo[100][100], int geracaoSeguinte[100][100]) {
 
 	int auxComanX = 0;
-
 	while (maximoEixoX > auxComanX) {
 		
 		int auxComanY = 0;
@@ -140,10 +142,8 @@ ao armazenar tudo em suas respectivas posicoes corretamente*/
 void copiarGeracao(int matrizJogo[100][100], int geracaoSeguinte[100][100]) {
 
 	int auxComanX = 0;
-
 	while (maximoEixoX > auxComanX) {
 		int auxComanY = 0;
-
 		while (maximoEixoY > auxComanY) {
 
 			matrizJogo[auxComanX][auxComanY] = geracaoSeguinte[auxComanX][auxComanY];
@@ -190,14 +190,15 @@ void analisaJogo(int matrizJogo[100][100], int geracaoSequinte[100][100]) {
 
 }
 
+//faz uma mesclagem e reprodução dos seres vivos presentes atualmente em jogo
 int vizinhoPosicaoAtual(int x, int y, int matrizJogo[100][100], int maxX, int maxY) {
 
 	int vizinhos = 0;
 
-	int cimaX = -1;
-	int cimaY = -1;
-	int baixoX = 1;
-	int baixoY = 1;
+	int cimaX = -1; //caso esteja em cima dele no eixo x
+	int cimaY = -1; //caso esteja em cima dele no eixo y
+	int baixoX = 1; //caso esteja embaixo dele no eixo x
+	int baixoY = 1; //caso esteja embaixo dele no eixo y
 
 	if (0 >= x) {
 		cimaX = 0;
@@ -244,7 +245,7 @@ void mostrarGeracaoSeguinte(int geracaoSeguinte[100][100]) {
 
 			if (geracaoSeguinte[auxComanX][auxComanY] == 0) {
 
-				printf("*", geracaoSeguinte[auxComanX][auxComanY]);
+				printf("\xDB", geracaoSeguinte[auxComanX][auxComanY]);
 			}
 			else {
 				printf(" ");
@@ -252,7 +253,7 @@ void mostrarGeracaoSeguinte(int geracaoSeguinte[100][100]) {
 			auxComanY++;
 		}
 		int quociente = maximoEixoX / 2;
-		printf("|"); 
+		printf(" \263"); 
 
 		if (auxComanX == quociente - 2) {
 
@@ -381,4 +382,5 @@ void limpezaTotal(int matrizJogo[100][100]) {
 	}
 	limparTela();
 	printf("Aplicando configurações. Isto será rápido, eu prometo...\n");
+	Sleep(500);
 }

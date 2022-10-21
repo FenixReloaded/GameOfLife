@@ -12,25 +12,29 @@
 #include "Functions.h"
 #include "salvar-carregar.txt"
 
-
-
-
 int main() {
 
-    setlocale(LC_ALL, "Portuguese");
+    // Pega as informacoes dos caracteres da lingua portuguesa
+    //se for retirado muda a visualização do mapa onde os seres aparecem, pensar em tirar podendo ficar melhor
+    setlocale(LC_ALL, "Portuguese"); 
 
     int matrizJogo[100][100];
     int geracaoSeguinte[100][100];
-    int opcaoMenu;
 
+    //limparTudinho ???
+
+    // Evita que o jogador cause um bug no programa em caso de má-selecao
     while (!0) {
 
+        int opcaoMenu;
         limparTela();
 
+        //Abertura do programa
         printf("\t\t\t\t********************************\n");
         printf("\t\t\t\t**Bem Vindo ao Jogo da Vida!!!**\n");
         printf("\t\t\t\t********************************\n");
 
+        //menu de opções
         printf("Escolha uma opção para continuar:\n");
         printf("1 -- Jogar\n");
         printf("2 -- Configurar mundo\n");
@@ -42,15 +46,17 @@ int main() {
 
         scanf(" %d", &opcaoMenu);
 
+        limparTela();
+
         switch (opcaoMenu) {
 
         case 1:
             printf("Aguarde alguns instantes enquanto carregamos o seu jogo...\n\n");
             printf("Tudo pronto para comecarmos a jogar! ;) \n");
             
-            int autoGerarSeres = 0;
-            int atrasoGeracao = 0;
-            bool tudoCerto = true;
+            int autoGerarSeres = 0;//captura e salva quantas vezes uma geracao automatica será realizada
+            int atrasoGeracao = 0;//faz o atraso (delay) entre uma geracao e outra
+            bool tudoCerto = true;//Checa o status se está tudo em conformidade para fazer a proxima geracao
 
             while (!0) {
 
@@ -114,10 +120,6 @@ int main() {
                         printf("Quantos segundos de atraso (delay) ?\n");
                         scanf(" %d", &atrasoGeracao);
                     }
-                    if (ch == 'c' || ch == 'C') {
-                        carregarJogo(matrizJogo, false);
-                        continue;
-                    }
                     if (ch == 'm' || ch == 'M') {
                         main();
                     }
@@ -167,8 +169,8 @@ int main() {
                 numGeracaoAtual++;
 
             }
-
-            //printf("2 - Selecionar seres vivos\n"); tem que ser colocado no menu dentro/antes do jogo;
+            return 0;
+            
 
         case 2:
             configuracaoGeral(matrizJogo);
@@ -179,11 +181,12 @@ int main() {
             break;
 
         case 4:
-            printf("Não implementado ainda");
+            carregarJogo(matrizJogo, true);
             break;
 
         case 5:
             printf("Reiniciando o jogo, por favor aguarde alguns instantes...\n\n\n");
+            Sleep(500);
             limparTela();
             break;
 
